@@ -1,13 +1,3 @@
-/**
- * ************************************
- *
- * @module  TrailDisplay
- * @author
- * @date
- * @description presentation component that renders each trail data
- *
- * ************************************
- */
 import React from "react";
 
 //pulls specific data from trailContainer to display in overlay

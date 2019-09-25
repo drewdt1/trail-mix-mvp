@@ -1,15 +1,3 @@
-/**
- * ************************************
- *
- * @module  ListDisplay
- * @author
- * @date
- * @description presentation component that display the trail list
- *
- *
- * ************************************
- */
-
 import React from "react";
 import Styles from "../styles.css"
 
@@ -38,10 +26,18 @@ const ListDisplay = props => {
                 </p>
             </div>
             <div className='column'>
-                <p id={props.id} className='difficulty' onClick={() => props.showKey()}>
+                <p 
+                id={props.id} 
+                className='difficulty' 
+                // onClick={() => props.showKey()}
+                >
                 Difficulty: {props.trailData.length > 0 && props.difficulty}
                 </p>
                 <br/>
+            </div>
+            <div className='column'>
+                <button>Save</button>
+                <button>View Detail</button>
             </div>
         </div>
     );

@@ -43,12 +43,12 @@
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 25.0%;
 }
 
 .column p {
     font-family: 'Arial';
-    font-weight: 550;
+    font-weight: 400;
 }
 
 .left {

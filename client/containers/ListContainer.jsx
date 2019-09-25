@@ -1,12 +1,3 @@
-/**
- * ************************************
- *
- * @module  ListContainer
- * @author
- * @date
- * @description stateful component that renders ListDisplay and TrainContainer
- * ************************************
- */
 import React, { Component } from "react";
 import ListDisplay from "../components/ListDisplay.jsx";
 

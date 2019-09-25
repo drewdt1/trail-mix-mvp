@@ -16,9 +16,9 @@ app.get('/homepage', (req, res) => {
 });
 
 //fetches trail data from REI API
-app.get('/data', trailController.getTrails, (req, res) => {
-  res.status(200).send(res.locals.trails);
-})
+// app.get('/data', trailController.getTrails, (req, res) => {
+//   res.status(200).send(res.locals.trails);
+// })
 
 //routes post request upon login to verify user
 app.post('/login', queries.verifyUser, (req, res) => {

@@ -1,14 +1,3 @@
-/**
- * ************************************
- *
- * @module  MapDisplay
- * @author
- * @date
- * @description presentation component that display the map
- *
- * ************************************
- */
-
 import React, { useState, useEffect } from "react";
 import ReactMapGl, { Marker, Popup } from 'react-map-gl';
 import SvgTrekking from "./Icons/Trekking.js";
@@ -16,15 +5,15 @@ import SvgTrekking from "./Icons/Trekking.js";
 //importing ReactMapGl component from react-map-gl module, using react hooks to set local state 
 const MapDisplay = props => {
     const [viewport, setViewport] = useState({
-       latitude: 34.1053,
-       longitude: -118.352,
+       latitude: props.latitude,
+       longitude: props.longitude,
        width: '70vw',
        height: '70vh',
-       zoom: 11
+       zoom: 8
     });
     
     const [selectedHike, setSelectedHike] = useState(null);
-
+// NEED MAPBOXAPIACCESSTOKEN AND MAPSTYLE FROM BRYAN!!!
     return (
         <div id="map-display">
             <ReactMapGl 
@@ -49,7 +38,7 @@ const MapDisplay = props => {
                             longitude: trail.longitude,
                             width: '70vw',
                             height: '70vh',
-                            zoom: 16
+                            zoom: 11
                         });
                     }}
                     >
